@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body{
+	/*兼容*/
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+	
+	-webkit-justify-content:center;
+	-moz-box-pack:center;
+	-ms-flex-pack:center;
+	    justify-content: center;
+
+	-webkit-align-items:center;
+	-moz-box-align:center;
+	-ms-flex-align:center;
+	    align-items: center;
+}
+
+#content{
+	width: 300px;
+	height: 300px;
+}
+#content>div{
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 0 5px #e4393c;
+	float: left;
+}
+.div1{
+	margin-left: 100px;
+	background-color:#4939e4; 
+}
+.div2{
+	clear: both;
+	background-color:#39e454;
+}
+.div3{
+	background-color:#e439b9;
+	/*方法一：图片居中*/
+	line-height: 100px;
+	text-align: center;
+}
+/*方法一：图片居中*/
+.div3 img{
+	vertical-align: middle;
+}
+.div4{
+	background-color:#e3e439;
+}
+.div5{
+	margin-left: 100px;
+	background-color:#39e4da;
+}
+
+
+
+
+
+
+

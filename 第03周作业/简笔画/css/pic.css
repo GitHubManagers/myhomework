@@ -1,0 +1,222 @@
+#content_box{
+  width:400px;
+  height:400px;
+  position:relative;
+  margin:50px auto;
+  background-color:#cccccc;
+
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+  animation:myAnimation 2s ease forwards;
+}
+
+/*脸部*/
+.face{
+  width:220px;
+  height:180px;
+  z-index:100;
+  position:relative;
+  border:1px solid #000000;
+  background-color:#ffffff;
+  border-radius:50%;
+}
+
+/*左眼*/
+.left_eye{
+  width:90px;
+  position:absolute;
+  height:70px;
+  background-color:#000000;
+  border-top-left-radius:90%;
+  border-top-right-radius:40%;
+  border-bottom-right-radius:90%;
+  border-bottom-left-radius:40%;
+  top:20px;
+  left:25px;
+}
+
+.left_eye_outer{
+  width:30px;
+  height:36px;
+  position:absolute;
+  top:4px;
+  left:38px;
+  background-color:#000000;
+  border:6px solid #ffffff;
+  border-radius:50%;
+  animation:animation_left 3s ease infinite;
+}
+
+.left_eye_inner{
+  width:20px;
+  height:20px;
+  position:absolute;
+  top:4px;
+  left:8px;
+  background-color:#fff;
+  border-radius:50%;
+}
+
+/*右眼*/
+.right_eye{
+  width:90px;
+  position:absolute;
+  height:70px;
+  background-color:#000000;
+  border-top-left-radius:40%;
+  border-top-right-radius:90%;
+  border-bottom-right-radius:40%;
+  border-bottom-left-radius:90%;
+  top:20px;
+  right:25px;
+}
+
+.right_eye_outer{
+  width:24px;
+  height:36px;
+  position:absolute;
+  top:4px;
+  right:38px;
+  background-color:#000000;
+  border:6px solid #ffffff;
+  border-radius:50%;
+  animation:animation_right 3s ease infinite;
+}
+
+.right_eye_inner{
+  width:20px;
+  height:20px;
+  position:absolute;
+  top:4px;
+  right:3px;
+  background-color:#fff;
+  border-radius:50%;
+}
+/*嘴巴*/
+.mouth{
+  width:39px;
+  height:20px;
+  position:absolute;
+  top:120px;
+  left:80px;
+  border:2px solid;
+  border-radius:50%;
+  background-color:#fff;
+}
+/*左耳朵*/
+.left_ear{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  border: 5px solid #000;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/*右耳朵*/
+.right_ear{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 90px;
+  right: 100px;
+  border: 5px solid #000;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.left_ear_inner{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.right_ear_inner{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+@-webkit-keyframes animation_left{
+  0%{
+    transform:translateX(-5px);
+    -webkit-transform:translateX(-5px);
+    -moz-transform:translateX(-5px);
+    -o-transform:translateX(-5px);
+    -ms-transform:translateX(-5px);
+  }
+  50%{
+    transform:translateX(-15px);
+    -webkit-transform:translateX(-15px);
+    -moz-transform:translateX(-15px);
+    -o-transform:translateX(-15px);
+    -ms-transform:translateX(-15px);
+  }
+  100%{
+    transform:translate(0 0);
+    -webkit-transform:translate(0 0);
+    -moz-transform:translate(0 0);
+    -o-transform:translate(0 0);
+    -ms-transform:translate(0 0);
+  }
+}
+@-webkit-keyframes animation_right{
+  0%{
+    transform:translateX(5px);
+    -webkit-transform:translateX(5px);
+    -moz-transform:translateX(5px);
+    -o-transform:translateX(5px);
+    -ms-transform:translateX(5px);
+  }
+  50%{
+    transform:translateX(15px);
+    -webkit-transform:translateX(15px);
+    -moz-transform:translateX(15px);
+    -o-transform:translateX(15px);
+    -ms-transform:translateX(15px);
+  }
+  100%{
+    transform:translate(0 0);
+    -webkit-transform:translate(0 0);
+    -moz-transform:translate(0 0);
+    -o-transform:translate(0 0);
+    -ms-transform:translate(0 0);
+  }
+}
+@-webkit-keyframes myAnimation{
+  0%{
+    -webkit-transform: scale(.5) rotate(180deg);
+    opacity:1;
+
+    -webkit-transition-property: border-color, background-color, color;
+    -webkit-transition-duration: .3s, .3s, .3s;
+    -webkit-transition-timing-function: ease-in, ease-in, ease-in;
+    -webkit-transition-delay: .1s, .1s, .1s;
+  }
+  50%{
+    -webkit-transform:scale(2) rotate(270deg);
+    opacity:.5;
+
+    -webkit-transition-property: border-color, background-color, color;
+    -webkit-transition-duration: .3s, .3s, .3s;
+    -webkit-transition-timing-function: ease-in, ease-in, ease-in;
+    -webkit-transition-delay: .1s, .1s, .1s;
+  }
+  100%{
+    -webkit-transform:scale(1) rotate(0deg);
+    opacity:1;
+
+    -webkit-transition-property: border-color, background-color, color;
+    -webkit-transition-duration: .3s, .3s, .3s;
+    -webkit-transition-timing-function: ease-in, ease-in, ease-in;
+    -webkit-transition-delay: .1s, .1s, .1s;
+  }
+ }

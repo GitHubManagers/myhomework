@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*整体布局设置*/
+.header{
+	background-color: #ec393c;
+	height: 100px;
+}
+.atricle{
+	background-color: #5ada15;
+	overflow: hidden;
+	text-align: center;
+	height: 350px;
+}
+.footer{
+	background-color: #1f15da;
+	height: 200px;
+}
+
+/*内容布局设置*/
+#left{
+	float: left;
+	background-color:#d9da15;
+	width: 150px;
+	margin-left: -100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	/*height: 50px;*/
+}
+
+#content{
+	background-color:#15dad8; 
+	float: left;
+	width: 100%;
+}
+#middle{
+	background-color: #ccc;
+	padding: 0 120px 0 150px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px
+}
+#right{
+	float: left;
+	background-color:#9e2cbd ;
+	width: 120px;
+	margin-left: -120px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px
+	/*height:50px;*/
+}

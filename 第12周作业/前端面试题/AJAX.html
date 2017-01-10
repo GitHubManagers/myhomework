@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ajax操作</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/mweb.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">1、请写出至少5中常见的http状态码以及其代表的意义。</h3>
+    </div>
+    <div class="panel-body">
+      <p>5种常见的http状态码以及代表的意义如下：</p>
+      <ul>
+        <li>200(OK):请求成功，请求所希望的响应头或数据体将随此响应返回。</li>
+        <li>303(See Other)：告知客户端使用另一个URL来获取资源。</li>
+        <li>400(Bad Request)：请求格式错误。1)语义有误，当前请求无法被服务器理解。除非进行修改，否则客户端不应该重复提交这个请求;2)请求参数有误。</li>
+        <li>404(Not Fount)：请求失败，请求所有希望得到的资源未被在服务器上发现。</li>
+        <li>500(Internal Server Error)：服务器遇到一个未曾预料的状况，导致了它无法完成对请求的处理。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">2、简要描述你对Ajax的理解。</h3>
+    </div>
+    <div class="panel-body">
+      <p>AJAX的全称是"Asynchronous JavaScript and XML",即异步的JavaScript和XML。它是指一种创建交互式网页应用的网页开发技术，可以实现页面的异步请求和局部刷新。</p>
+
+      <p>AJAX包含下列技术：</p>
+      <ul>
+        <li>基于web标准XHTML+CSS的表示</li>
+        <li>使用DOM(Document ObjectModel)进行动态显示及交互</li>
+        <li>使用XML和XSLT进行数据交互及相关操作</li>
+        <li>使用XMLHttpRequest进行异步数据查询、检索</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">3、请介绍一下XMLHttprequest对象。</h3>
+    </div>
+    <div class="panel-body">
+      <p>AJAX的核心是JavaScript对象XMLHttpRequest。该对象在Internet Explorer
+        5中首次引入，它是一种支持异步请求的技术。简而言之，XMLHttpRequest可以使用JavaScript向服务器端提出请求并且处理响应，而不阻塞用户。通过XMLHttpRequest对象,web开发人员可以在页面加载以后进行页面的局部更新。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">4、AJAX应用和传统Web应用有什么不同？</h3>
+    </div>
+    <div class="panel-body">
+      <p>在传统的JavaScript编程中，如果想得到服务器端数据库或文件上的信息，或者发送客户端信息到服务器，需要建立一个HTML
+        form然后GET或者POST数据到服务器端。用户需要点击“Submit”按钮来发送或者接收数据信息，然后等待服务器响应请求，页面重新加载。因为服务器每次都会返回一个新的页面，所以传统的web应用有可能很慢而且用户交互较差。</p>
+
+      <p>使用AJAX技术，就可以是JavaScript通过XMLHttpRequest对象直接与服务器进行交互，通过HTTP
+        Request，一个web页面可以发送一个请求到web服务器并且接收web服务器返回的信息(不用重新加载页面)，展示给用户的还是同一个页面，但是只实现页面的局部刷新，从而提高体验度。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">5、介绍一下XMLHttpRequest对象的常用方法和属性。</h3>
+    </div>
+    <div class="panel-body">
+      <p>open("method","RUL")：建立对服务器的调用，第一个参数是HTTP 请求方式(可以为GET，POST或任何服务器所支持的你想调用的方式),第二个参数是请求页面的URL；</p>
+      <ul>
+        <li>send()方法：发送具体请求；</li>
+        <li>abort()方法：停止当前请求；</li>
+        <li>readyState属性：请求的状态，有五个可取值
+          <dl>
+            <dd>0=未初始化，</dd>
+            <dd>1=正在加载，</dd>
+            <dd>2=已经加载，</dd>
+            <dd>3=交互中</dd>
+            <dd>4=完成</dd>
+          </dl>
+        </li>
+        <li>responseText属性：服务器的响应，表示为一个串</li>
+        <li>responseXML属性：服务器的响应，表示为XML；</li>
+        <li>status属性：服务器的HTTP状态码。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">6、简述AJAX的交互模型，以及同步和异步的区别？</h3>
+    </div>
+    <div class="panel-body">
+      <p>AJAX主要用于实现从服务器获取数据并局部刷新页面。其交互模型为，AJAX在浏览器端引入一个执行引擎，它一边接收user的请求，一边传送数据给服务器，并把服务器端返回的结果展示给user。</p>
+
+      <p>同步：脚本会停留并等待服务器发送回复，然后继续。</p>
+
+      <p>异步：脚本不停留并处理可能的回复。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">7、现需要使用jQuery代码实现ajax请求，详细信息如下：</h3>
+    </div>
+    <div class="panel-body">
+      <p>请求的rul:carinfo.do</p>
+
+      <p>发送方式：post</p>
+
+      <p>发送的数据：id为s1的文本框的值</p>
+
+      <p>返回的数据：json格式</p>
+
+      <p>请求成功：将返回的数据写入id为上s2的文本框中</p>
+
+      <p>请求失败：弹出文本“系统错误”</p>
+
+      <p>请提供代码实现上述功能。</p>
+
+      <p>
+        $.ajax({ <br/>
+        rul:"carinfo.do", <br/>
+        type:"post", <br/>
+        data:$("#s1").val(), <br/>
+        dataType:"json", <br/>
+        success:function(resText){ <br/>
+        $("#s2").val(resText); <br/>
+        }, <br/>
+        error:function(){ <br/>
+        window.alert("系统错误"); <br/>
+        } <br/>
+        }); <br/>
+      </p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">8、AJAX都有哪些优点和缺点？</h3>
+    </div>
+    <div class="panel-body">
+      <p>优点：</p>
+      <ul>
+        <li>页面局部刷新，提高用户体验度；</li>
+        <li>使用异步方式与服务器通信，具有更加迅速的响应能力；</li>
+        <li>减轻服务器负担；</li>
+        <li>基于标准化的并被广泛支持的技术，不需要下载插件或者小程序。</li>
+      </ul>
+      <p>缺点：</p>
+      <ul>
+        <li>不支持浏览器back按钮；</li>
+        <li>安全问题；</li>
+        <li>对搜索引擎的支持比较弱。</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

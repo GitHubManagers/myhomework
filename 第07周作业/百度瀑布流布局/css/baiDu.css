@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*初始化*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p{
+  margin:0;
+  padding:0
+}
+
+body{
+  font:12px arial;
+  background:#ddd;
+}
+
+input, button{
+  border:none;
+}
+
+ul, ol, li{
+  list-style:none;
+}
+
+.fl{
+  float:left;
+}
+
+.fr{
+  float:right;
+}
+
+.clear{
+  clear:both;
+}
+
+.wrapper{
+  width:1190px;
+  margin:0 auto;
+}
+
+/*顶部右侧导航 begin*/
+div.header_box{
+  background:#fff;
+}
+
+ul.top{
+  float:right;
+}
+
+ul.top li{
+  float:left;
+  line-height:30px;
+  margin-right:20px;
+}
+
+ul.top li a{
+  color:#000;
+}
+
+/*顶部右侧导航 end*/
+/*搜索框头部文字导航 begin*/
+ul.nav{
+  float:left;
+  margin-left:137px;
+}
+
+ul.nav li{
+  float:left;
+  margin:15px;
+}
+
+ul.nav li a{
+  font-size:16px;
+  color:#999;
+  text-decoration:none;
+}
+
+ul.nav li.current a{
+  color:#000;
+  font-weight:bold;
+}
+
+/*搜索框头部文字导航 end*/
+/*搜索框 begin*/
+div.search{
+  overflow:hidden;
+}
+
+/*logo*/
+div.search > img{
+  float:left;
+  width:137px;
+  height:46px;
+}
+
+div.form_box{
+  float:left;
+  width:700px;
+  margin-top:5px;
+  position:relative;
+}
+
+/*搜索输入框*/
+div.form_box input.keyword{
+  float:left;
+  width:582px;
+  height:34px;
+  line-height:34px;
+  padding-right:18px;
+  _padding-right:18px;
+  border:1px solid #3385FF;
+}
+
+/*拍照图标定位*/
+div.form_box form b{
+  display:inline-block;
+  width:18px;
+  height:20px;
+  position:absolute;
+  z-index:100;
+  top:10px;
+  right:115px;
+  background:url("../images/camera_list.png") no-repeat 0 0;
+}
+
+div.form_box form b:hover{
+  background:url("../images/camera_list.png") no-repeat 0 -20px;
+}
+
+/*点击搜索按钮*/
+div.form_box form button.search{
+  float:left;
+  width:98px;
+  height:36px;
+  line-height:36px;
+  background-color:#3385FF;
+  font-size:15px;
+  color:#fff;
+}
+
+div.form_box form button.search:hover{
+  background-image:linear-gradient(to bottom, #17407C 0%, #2560B7 50%, #3681F1 100%);
+  cursor:pointer;
+}
+
+/*搜索框 end*/
+/*瀑布流 （等宽不等高） begin*/
+div.box{
+  position:relative;
+  float:left;
+}
+
+div.content{
+  padding:10px;
+  border:1px solid #ccc;
+  box-shadow:0 0 5px #ddd;
+  border-radius:5px;
+}
+
+div.content img{
+  width:170px;
+  height:auto;
+}
+
+/*瀑布流 end*/

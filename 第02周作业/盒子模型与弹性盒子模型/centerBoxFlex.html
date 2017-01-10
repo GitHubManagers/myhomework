@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>旧版弹性盒子居中布局</title>
+	<style type="text/css">
+
+		/*需要给外层容器添加属性
+			display:-webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+
+		*/
+		.col{
+			display:-webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			width: 600px;
+			height: 400px;
+			margin: 100px auto;
+			background-color: #efb1e9;
+		}
+		#first{
+			width: 300px;
+			height: 200px;
+			background-color: #244275;
+		}
+	</style>
+</head>
+<body>
+	<div class="col">
+		<div id="first">我是一个div</div>
+	</div>
+</body>
+</html>

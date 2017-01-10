@@ -1,0 +1,140 @@
+*{
+  padding:0;
+  margin:0;
+}
+#box{
+  position: relative;
+  font-size: 80px;
+  width: 160px;
+  margin: 100px auto;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  /*-webkit-transform: rotateX(-30deg) rotateY(30deg);*/
+  /*transform: rotateX(-30deg) rotateY(30deg);*/
+
+
+  transform-origin:50% 50%; /*50% 是相对于width和height的，如果不设置width和height，则transform-origin不起作用*/
+  backface-visibility:hidden;
+  -webkit-animation:animations 4s ease-in-out 0.1s infinite;
+  -moz-animation:animations 4s ease-in-out 0.1s infinite;
+  -o-animation:animations 4s ease-in-out 0.1s infinite;
+}
+#box>div{
+  position: fixed;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  background: transparent;
+  border-radius:10px;
+}
+#box div ul li{
+  float:left;
+  width:50px;
+  height:50px;
+  list-style:none;
+  border-radius: 10px;
+}
+#box .div1{
+  -webkit-transform:rotateX(360deg) translateZ(80px);
+  transform: rotateX(360deg) translateZ(80px);
+}
+
+#box .div2{
+  -webkit-transform:rotateY(180deg) translateZ(80px);
+  transform: rotateY(180deg) translateZ(80px);
+}
+
+#box .div3{
+  transform: rotateY(-90deg) translateZ(80px);
+}
+#box .div4{
+  transform: rotateY(-270deg) translateZ(80px);
+}
+#box .div5{
+  transform: rotateX(90deg) translateZ(80px);
+}
+#box .div6{
+  transform: rotateX(90deg) translateZ(-80px);
+}
+#box .div1 ul li{
+  background-color:#e20808;
+}
+#box .div2 ul li{
+  background-color:#0808e2;
+}
+#box .div3 ul li{
+  background-color:#e2cf08;
+}
+#box .div4 ul li{
+  background-color:#2ce208;
+}
+#box .div5 ul li{
+  background-color:#e26a08;
+}
+#box .div6 ul li{
+  background-color:#000000;
+}
+.min_cube{
+  width:64px;
+  height:64px;
+  float:left;
+  border:1px solid darkgray;
+}
+
+/*定义动画*/
+@keyframes animations{
+  0%{
+    -webkit-transform:rotateZ(270deg);
+  }
+  25%{
+    -webkit-transform:rotateY(180deg);
+  }
+  50%{
+    -webkit-transform:rotateZ(-270deg);
+  }
+  75%{
+    -webkit-transform:rotateY(-180deg);
+  }
+}
+@-webkit-keyframes animations{
+  0%{
+    -webkit-transform:rotateZ(270deg);
+  }
+  25%{
+    -webkit-transform:rotateY(180deg);
+  }
+  50%{
+    -webkit-transform:rotateZ(-270deg);
+  }
+  75%{
+    -webkit-transform:rotateY(-180deg);
+  }
+}
+@-moz-keyframes animations{
+  0%{
+    -webkit-transform:rotateZ(270deg);
+  }
+  25%{
+    -webkit-transform:rotateY(180deg);
+  }
+  50%{
+    -webkit-transform:rotateZ(-270deg);
+  }
+  75%{
+    -webkit-transform:rotateY(-180deg);
+  }
+}
+@-o-keyframes animations{
+  0%{
+    -webkit-transform:rotateZ(270deg);
+  }
+  25%{
+    -webkit-transform:rotateY(180deg);
+  }
+  50%{
+    -webkit-transform:rotateZ(-270deg);
+  }
+  75%{
+    -webkit-transform:rotateY(-180deg);
+  }
+}

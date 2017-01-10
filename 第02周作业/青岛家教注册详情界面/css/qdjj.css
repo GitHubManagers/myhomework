@@ -1,0 +1,199 @@
+body{
+	font:12px "microsoft yahei","arial";
+	color:#666;
+	margin:0px;
+	padding:0px;
+}
+p,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,b,i,u,span{
+	margin:0px;
+	padding:0px;
+	border:none;
+	list-style:none;
+}
+
+.fl {
+    float: left;
+    margin-right: 5px;
+}
+
+.fr {
+    float: right;
+    text-align: justify;
+}
+
+.cl {
+    clear: both;
+}
+
+body{
+	background-image: url("../images/beijing.gif");
+	text-align:center;
+}
+table,tr,td,th{
+	border:1px solid #ccc;
+}
+#content_box table{
+	border-collapse: collapse;
+}
+#content_box{
+	width:710px;
+	margin: 10px auto;
+	border:1px solid transparent;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+/*header start*/
+#content_top{
+	width: 639px;
+	height: 82px;
+	margin: 0 auto;
+}
+#content_top img{
+	float: left;
+	width: 180px;
+	height: 76px;
+	margin-left: -10px;
+}
+#content_top p{
+	margin: 56px 0 0 0 ;
+}
+#content_top p a{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-decoration:none;
+	color:#e4393c;
+}
+/*header end*/
+
+/*section start*/
+#content_table{
+	margin:10px auto;
+}
+#content_table div table{
+	width: 100%;
+}
+#content_table h3{
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.fh{
+	overflow:hidden;
+	clear: both;
+}
+/*设置行高 、字体颜色*/
+table tbody tr td{
+	height: 23px;
+	line-height: 23px;
+	color:#000;
+}
+/*红色 字体或 *号*/
+table tbody td i{
+	font-style: normal;
+	color:#ff0000;
+}
+/*蓝色 字体 */
+table tbody td b{
+	font-style: normal;
+	font-weight: normal;
+	color:#0000ff;
+}
+table tbody td u{
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color:#000000;
+	float: right;
+	margin-right: 5px;
+}
+/*表格第一列的宽度*/
+table tbody tr td {
+	width: 130px;
+}
+table tbody tr td .td_width{
+	float: right;
+	width: 70%;
+	text-align: right;
+}
+/*td中input的margin与width*/
+table tbody td p input{
+	width: 243px;
+	height: 21px;
+	margin:2px 0  0 5px;
+	float: left;
+}
+table tbody td p.notice {
+	text-align: justify;
+	clear: both;
+}
+table tbody tr td .j_left{
+	float: left;
+	text-align: left;
+    height: 30px;
+    line-height: 30px;
+   	margin-left: 5px;
+}
+/*下拉框*/
+table tbody tr td .j_selected{
+	float: left;
+	height: 19px;
+	line-height: 19px;
+	margin: 5px; 
+}
+
+table tbody tr td.td_1 p{
+	height: 18px;
+	line-height: 18px;
+	padding: 0 3px;
+}
+
+table tbody td.td_1 p a{
+	text-decoration:none;
+	color:#0000ff;
+}
+table tbody td.td_2{
+	background-color: #eee;
+	text-align: left;
+	padding-left: 10px;
+	font-weight: bold;
+	color:#039;
+}
+table tbody td.td_3 p{
+	width: 100%;
+	overflow: hidden;
+}
+
+textarea{
+	float: left;
+	margin: 2px 0 10px 2px;
+	resize: none;
+	overflow-x: hidden;
+}
+table tbody tr td>span input{
+	width: 15px;
+}
+table tbody tr td.last{
+	height: 100px;
+	line-height: 100px;
+}
+/*加了该标签，整个表格变小了*/
+/*caption{
+	width: 710px;
+	margin-bottom: 10px;
+}*/
+
+
+/*section end*/
+
+/*footer start*/
+#footer{
+	padding-top: 20px;
+}
+/*footer end*/
+
+
+
+
+

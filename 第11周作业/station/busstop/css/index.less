@@ -1,0 +1,181 @@
+@outer-color:#F7F3F4;
+@default-color:#4E6656;
+@white-color:#fff;
+@current-color:#CE281E;
+@bo-color1:#3C8B4D;
+@bg-color:#B7D54F;
+@bo-color:#F2CB66;
+@ccc-color:#ccc;
+
+@font-s12:12px;
+@font-s14:14px;
+@font-s16:16px;
+@font-s18:18px;
+@font-s20:20px;
+@font-s30:30px;
+
+
+@border-rad10:10px;
+@border-rad20:20px;
+
+body{
+  background:@bo-color;
+  div.container{
+    position:relative;
+    width:1000px;
+    height:900px;
+    margin:0 auto;
+    background:url("../../img/bg.jpg") no-repeat top center;
+
+    div.top{
+      display:flex;
+      flex-direction:column;
+      position:absolute;
+      bottom:290px;
+      right:-170px;
+      width:470px;
+      height:250px;
+      border:8px solid @current-color;
+      border-radius:@border-rad20;
+      background:@bg-color;
+      div.title{
+        flex:1;
+        text-align:center;
+        color:@default-color;
+        background-color:@white-color;
+        border-top-left-radius:@border-rad10;
+        border-top-right-radius:@border-rad10;
+        border-bottom:4px solid @bo-color1;
+        h2{
+          font-size:@font-s30;
+        }
+        p{
+          font-size:@font-s18;
+        }
+      }
+      div.content{
+        display:flex;
+        flex:2;
+        div.left{
+          flex:2;
+          background:@default-color;
+          padding-left:5px;
+          overflow: hidden;
+          border-bottom-left-radius: 10px;
+          span{
+            float:left;
+            width:40px;
+            line-height:16px;
+            font-size:@font-s16;
+            color:@bg-color;
+            margin-top:8px;
+          }
+          b{
+            color:@white-color;
+            font-size:@font-s30;
+          }
+          >p{
+            color:@current-color;
+            font-size:@font-s18;
+            font-weight:bold;
+            text-align:justify;
+          }
+          div.no-air{
+            float:left;
+            margin-right: 5px;
+            font-size: 12px;
+            color:@bg-color;
+            p{
+              color:@bg-color;
+              i{
+                display:inline-block;
+                width:4px;
+                height:4px;
+                border:2px solid @bg-color;
+                border-radius:50%;
+                background: @bg-color;
+                margin-right: 3px;
+              }
+            }
+          }
+          div.air{
+            float:left;
+            font-size: 12px;
+            p{
+              color:@bg-color;
+            }
+          }
+          h5{
+            b{
+              font-size:@font-s16;
+              color:@bg-color;
+            }
+          }
+        }
+        div.right{
+          display:flex;
+          flex:4;
+          position:relative;
+          ul{
+            width:300px;
+            height:140px;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            border-top: 2px solid @current-color;
+            margin:10px 5px;
+            li{
+              flex:1;
+              color:@default-color;
+              font-size:@font-s20;
+              width: 30px;
+              height:110px;
+              text-align: center;
+              span{
+                display:flex;
+
+              }
+            }
+            li.current-stop{
+              span{
+                color:@current-color;
+              }
+            }
+          }
+          b{
+            position:absolute;
+            right: 5px;
+            border: 5px solid transparent;
+            border-right-color: @current-color;
+          }
+          i{
+            position:absolute;
+            right: 5px;
+            top: -1px;
+            border: 5px solid transparent;
+            border-right-color: @bg-color;
+          }
+        }
+      }
+    }
+    div.middle{
+      position:absolute;
+      bottom:40px;
+      right:74px;
+      width:20px;
+      height:250px;
+      background:@ccc-color;
+    }
+    div.bottom{
+      position:absolute;
+      bottom:0;
+      right:0;
+      width:90px;
+      border:40px solid transparent;
+      border-bottom-color:@outer-color;
+    }
+  }
+}
+

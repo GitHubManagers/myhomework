@@ -1,0 +1,217 @@
+/*初始化*/
+body{
+	font:12px "microsoft yahei","arial";
+	color:#666;
+	margin:0px;
+	padding:0px;
+	text-align: center;
+}
+p,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	border:none;
+	list-style:none;
+}
+input{
+	border:none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cl {
+    clear: both;
+}
+
+/*nav start*/
+#top_box{
+	margin-top: 19px 0 5px 0;
+}
+#top_box ul {
+    width: 492px;
+	height: 24px;
+	line-height: 24px;
+	margin: 19px 0 5px 0;
+}
+
+#top_box ul>li {
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+#top_box ul>li a {
+    display: inline-block;
+    width: 28px;
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+#top_box ul li.mnav_li {
+    width: 44px;
+}
+
+#top_box ul li.mnav_normal>a {
+    font-weight: normal;
+}
+
+#top_box ul li.last {
+    border-bottom: 1px solid #38f;
+}
+
+#top_box ul li.last>a {
+    width: 60px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #38f;
+    text-decoration: none;
+    cursor: default;
+}
+
+#top_box ul li.last ul{
+	position: absolute;
+	right: -10px;
+	top:7px;
+	width: 75px;
+	height: 300px;
+	border:1px solid #ddd;
+	border-top:none;
+	box-shadow: 0 0 10px #666;
+	background-color: #ffffff;
+
+}
+#top_box ul li.last ul li{
+	text-align: center;
+	margin-left: 0px;
+	width: 75px;
+	height: 56px;
+	line-height: 79px;
+	padding-top: 45px;
+	border-bottom: 1px solid #ddd;
+	position:relative;
+}
+#top_box ul li.last ul li i{
+	position: absolute;
+	top:29px;
+	right: 20px;
+	width: 36px;
+	height: 40px;
+	background: url("../imgs/nav_rightIcon.png") no-repeat 0 0;
+}
+
+*/
+/*nav end*/
+
+/*section start*/
+section div.mh{
+	clear: both;
+	height: 1px;
+}
+section>img{
+	width: 270px;
+	height: 129px;
+}
+section form{
+	width: 652px;
+	margin: 0 auto;
+	position: relative;
+}
+section form i{
+	position: absolute;
+	right: 115px;
+	top:10px;
+	width: 18px;
+	height: 16px;
+	background:url("../imgs/camera_list.png") no-repeat 0px 0px;
+}
+section form i:hover{
+	background:url("../imgs/camera_list.png") no-repeat 0 -20px;
+}
+section input{
+	width: 540px;
+	height: 36px;
+	border:1px solid #ddd;
+}
+section button{
+	width: 100px;
+	margin-left: -5px;
+	height: 40px;
+	background-color:#3385ff;
+	border:none;
+	color: #fff;
+}
+
+/*section end*/
+
+
+
+/*footer start*/
+
+footer {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    padding-top: 270px;
+}
+footer>div{
+	margin-left: 20px;
+}
+footer div.first p{
+		color: #999;
+		margin: 8px 0 0 10px;
+}
+footer div.first p b{
+		color: #666;
+}
+footer div.ft_last p{
+	line-height: 20px;
+}
+footer div.ft_last p a{
+	color: #999;
+}
+footer div.ft_last p.ft_first a{
+	padding-left: 25px;
+}
+footer div.ft_last p.ft_second{
+	position: relative;
+}
+footer div.ft_last p.ft_second b{
+	display: inline-block;
+	width: 14px;
+	height: 18px;
+	position: absolute;
+	top:1px;
+	right: 10px;
+	background: url("../imgs/icons_list.png") no-repeat -602px -96px;
+}
+footer div.ft_last p.ft_third{
+	position: relative;
+}
+footer div.ft_last p.ft_third i{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 80px;
+	width: 14px;
+	height: 18px;
+	background: url("../imgs/icons_list.png") no-repeat -623px -96px;
+}
+/*footer end*/

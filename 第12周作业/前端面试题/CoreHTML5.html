@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5高级</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/mweb.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">1、简要描述HTML5中的本地存储</h3>
+    </div>
+    <div class="panel-body">
+      <p>很多时候，我们会存储用户本地信息到电脑上，例如：假如用户有一个填充了一半的长表格，然后突然网络连接断开了，这样用户希望你能存储这些信息到本地，但网络恢复的时候，他想获取这些信息，然后发送到服务器进行存储。</p>
+
+      <p>现代浏览器拥有的存储被叫做“Local Storage”,用于存储这些信息。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">2、简要描述HTML5中Canvas的作用。</h3>
+    </div>
+    <div class="panel-body">
+      <p>Canvas是HTML5出现的新标签，拥有自己的属性、方法和事件，其中就有绘图的方法，JavaScript能够调用它在网页上完成绘图。</p>
+
+      <p>Canvas也是HTML5中最强大的特性之一，允许开发者使用动态和交互式可视化方法在Web上实现桌面应用程序的功能。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">3、HTML5有哪些不同类型的存储？</h3>
+    </div>
+    <div class="panel-body">
+      <p>HTML5支持本地存储，在之前的版本中是通过Cookie实现的。HTML5本地存储速度快而安全。</p>
+
+      <p>有两种不同的对象可用来存储数据：</p>
+      <ul>
+        <li>localStorage:适用于长期存储数据，浏览器关闭后数据不丢失；</li>
+        <li>sessionStorage:存储的数据在浏览器关闭后自动删除。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">4、除了音频和视频，HTML5孩子从其它什么新的媒体元素？</h3>
+    </div>
+    <div class="panel-body">
+      <p>HTML5对媒体支持很强，除了audio和video外，还提供了：</p>
+      <ul>
+        <li>&lt;embed&gt;:作为外部应用的容器；</li>
+        <li>&lt;track&gt;:定义媒体的文本跟踪；</li>
+        <li>&lt;source&gt;:多种媒体源的支持。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">5、HTML5应用缓存是什么？</h3>
+    </div>
+    <div class="panel-body">
+      <p>常用于实现用户的离线浏览。如果网络连接不可用，页面应该来自浏览缓存，离线应用缓存可以帮助你达到这个目的。</p>
+
+      <p>应用缓存可以帮助你指定哪些需要缓存，哪些不需要。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">6、什么是Web Worker？为什么我们需要他们？</h3>
+    </div>
+    <div class="panel-body">
+      <p>查看如下代码(模拟会执行上百万次繁重代码):</p>
+
+      <p>
+        function test(){ <br/>
+        for(var i= 0;i<100000000000;i++){ <br/>
+        x=x+i; <br/>
+        } <br/>
+        } <br/>
+      </p>
+
+      <p>如果上述代码在HTML按钮点击以后执行，这种执行是同步的，即，浏览器必须等到此执行完毕之后才能进行其它操作。因此此操作耗时较长，那么这个操作会导致浏览器冻结并没有响应，而且屏幕还会出现异常信息。</p>
+
+      <p>如果可以将这些繁重的代码移动到JavaScript文件中，并采用异步的方式运行，就可以解决这个问题，这就是web worker的作用。Web Worker用于异步执行JavaScript文件，提高浏览器的敏捷度。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">7、HTML5应用程序缓存和浏览器缓存有什么区别？</h3>
+    </div>
+    <div class="panel-body">
+      <p>
+        应用程序缓存是HTML5的重要特性之一，提供了离线使用功能，让应用程序可以获取本地的网络内容，例如：HTML、CSS、图片以及JavaScript。这个特性可以提高网站性能，它的实现借助于manifest文件，代码如下：</p>
+
+      <p>
+        &lt;!doctype html&gt; <br/>
+        &lt;html manifest="example.appcache"&gt; <br/>
+        ...... <br/>
+        &lt;/html&gt; <br/>
+      </p>
+
+      <p>与传统浏览器缓存相比，它不强制用户访问的网站内容被缓存。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">8、简要描述HTML5中新增的表单元素</h3>
+    </div>
+    <div class="panel-body">
+      <p>datalist、datetime、output、date、month、week、time、color、number、rage、email、url、search等</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

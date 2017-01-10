@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>DOM操作</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/mweb.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">1、谈谈innerHTML、nodeValue和textContent之间的区别？</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li>innerHTML属性读取或设置节点起始和结束标签中的HTML内容；</li>
+        <li>nodeValue属性读取或设置指定节点的文本内容，适用于文本类型的节点；</li>
+        <li>textContent属性读取或设置指定节点的文本内容，对于元素节点而言，会返回所包含的所有子节点中的文本内容的组合。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">2、DOM操作中，如何获取元素的属性值？</h3>
+    </div>
+    <div class="panel-body">
+      <p>对于元素节点，获取其某属性的值有多种方式，如下所示：</p>
+      <ul>
+        <li>1、element.attributes[下标].value</li>
+        <li>2、element.attributes[‘属性名’].value</li>
+        <li>3、element.geAttributeNode(‘属性名’).value</li>
+        <li>4、element.geAttribute(‘属性名’)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">3、简要描述DOM操作中查找元素的方式？</h3>
+    </div>
+    <div class="panel-body">
+      <p>1、通过HTML中的信息选取元素，比如：</p>
+      <ul>
+        <li>a)getElementById()方法：根据元素的id属性值查询单个节点；</li>
+        <li>b)getElementByTagName()方法：根据元素标签的名称查询节点；</li>
+        <li>c)getElementByName()方法：根据元素name属性的值查询节点；</li>
+      </ul>
+      <p>2、通过CSS类选取元素</p>
+      <ul>
+        <li>a)getElementByClassName('className')方法：根据class名称选取元素；</li>
+        <li>b)querySelector('selector')和querySelectotrAll('selector')方法：根据CSS选择器器选取元素。</li>
+      </ul>
+      <p>通过document对象选取，如：document.all、document.body等</p>
+      <p>通过节点遍历选取节点，如parentNode、firstChild等。</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">4、为html页面上的一个按钮添加？</h3>
+    </div>
+    <div class="panel-body">
+      <p>1、直接在HTML代码中添加，如：</p>
+      <p>&lt;input type="button" onclick="funA();"&gt;&lt;/&gt;</p>
+      <p>其中，funA()为一个有效函数。</p>
+      <p>2、在JS代码中添加，如：</p>
+      <p>btn.onclick = funA;</p>
+      <p>或者</p>
+      <p>btn.onclick = function(){...}</p>
+      <p>其中，btn表示按钮对象。</p>
+      <p>3、定义监听函数，代码如：</p>
+      <p>btn.addEventListener('click',function(){...});</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">5、简述window对象除document以外的一些常用子对象，并描述其作用？</h3>
+    </div>
+    <div class="panel-body">
+      <p>window对象有很多子对象，除了document以外，还有如下常用子对象：</p>
+      <ul>
+        <li>screen对象：此对象包含有关客户端显示屏幕的信息，常用于获取屏幕的分辨率和色彩；</li>
+        <li>history对象：此对象包含用户(在浏览器窗口中)访问过的URL;</li>
+        <li>location对象：此对象包含有关当前URL的信息，常用于获取和改变当前浏览的网址；</li>
+        <li>navigator对象：此对象包含有关浏览器的信息，常用于获取客户端浏览器和操作系统信息；</li>
+        <li>event对象：任何事件触发后将会产生一个event对象，该对象记录事件发生时的鼠标位置、键盘按键状态和触发对象等信息。</li>
+      </ul>
+    </div>
+  </div>  <div class="panel panel-success">
+  <div class="panel-heading ">
+    <h3 class="panel-title">6、查看如下代码：</h3>
+  </div>
+  <div class="panel-body">
+    <img src="img/dom.png" alt=""/>
+    <p>该代码在浏览器中运行时，点击段落中的文本"ClickMe",页面效果为？</p>
+    <p>先弹出"clickP,target=P",再弹出"clickDIV,target=P"。</p>
+    <p>单击段落中的文本"ClickMe",先触发&lt;P&gt;元素的onclick事件，且触发事件的元素为段落P，因此，先弹出"clickP,target=P;然后事件冒泡，触发&lt;div&gt;元素的onclick事件，再弹出"clickDIV,target=P"。</p>
+  </div>
+</div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">7、实现每隔一秒钟弹出一个对话框，且此弹出过程持续5秒钟。</h3>
+    </div>
+    <div class="panel-body">
+      <p>代码如下所示：</p>
+      <p>var id = setInterval(function(){ <br/>
+          alert("Hello World!"); <br/>
+        },1000); <br/></p>
+      <p>setTimeout(function(){ <br/>
+          clearInterval(id); <br/>
+        },5*1000);</p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">8、为页面动态添加按钮</h3>
+    </div>
+    <div class="panel-body">
+      <p>使用JS代码为页面动态添加5个按钮，每个按钮上的文本为"botton1"、"button2"、"button3"。单击每个按钮时，分别弹出数字1、2、...5。代码如下：</p>
+      <img src="img/dom1.png" alt=""/>
+      <p>为空白处填上代码，实现所需要功能。</p>
+      <p>参考代码如下：</p>
+      <p>
+        <img src="img/dom2.png" alt=""/>
+      </p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">9、文本框验证(考虑浏览器将容器)</h3>
+    </div>
+    <div class="panel-body">
+      <p>页面有文本框，需要限制该文本框中只能录入数字，即：如果用户按下数字以外的其它键，文本框中无法录入；如果用户粘贴进非数字字符，也需要进行过滤。</p>
+      <p>请设计HTML代码以及JS代码，实现上述功能。</p>
+      <h4>参考答案：</h4>
+      <p>首先，需要为文本框定义onkeypress事件，用于在录入文本时做出判断；并为文本框定义onkeyup事件，用于过滤粘贴进来的文本。HTML代码如下所示：</p>
+      <img src="img/dom3.png" alt=""/>
+      <p>JS代码如下所示：
+       <p><img src="img/dom4.png" alt=""/></p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">10、总结可以实现页面跳转和刷新的方法。</h3>
+    </div>
+    <div class="panel-body">
+      <p>1、使用超级链接，代码如下：</p>
+      <p>&lt;a href="url"&gt;&lt;/a&gt;</p>
+      <p>2、表单提交，代码如下：</p>
+      <p>&lt;form action="url"&gt;&lt;/form&gt;</p>
+      <p>3、js代码，代码如下：</p>
+      <p>
+        location.href="url"; <br/>
+        location.assign("url"); <br/>
+        location.replace(); <br/>
+        location.reload(); <br/>
+        window.open("url"); <br/>
+        history.go();
+      </p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

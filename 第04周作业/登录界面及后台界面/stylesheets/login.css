@@ -1,0 +1,9 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.content{
+  background: url("../images/bg.jpg") no-repeat;
+  margin:200px auto;
+}

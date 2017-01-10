@@ -1,0 +1,154 @@
+body {
+  background: #F2CB66;
+}
+body div.container {
+  position: relative;
+  width: 1000px;
+  height: 900px;
+  margin: 0 auto;
+  background: url("../../img/bg.jpg") no-repeat top center;
+}
+body div.container div.top {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 290px;
+  right: -170px;
+  width: 470px;
+  height: 250px;
+  border: 8px solid #CE281E;
+  border-radius: 20px;
+  background: #B7D54F;
+}
+body div.container div.top div.title {
+  flex: 1;
+  text-align: center;
+  color: #4E6656;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 4px solid #3C8B4D;
+}
+body div.container div.top div.title h2 {
+  font-size: 30px;
+}
+body div.container div.top div.title p {
+  font-size: 18px;
+}
+body div.container div.top div.content {
+  display: flex;
+  flex: 2;
+}
+body div.container div.top div.content div.left {
+  flex: 2;
+  background: #4E6656;
+  padding-left: 5px;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+}
+body div.container div.top div.content div.left span {
+  float: left;
+  width: 40px;
+  line-height: 16px;
+  font-size: 16px;
+  color: #B7D54F;
+  margin-top: 8px;
+}
+body div.container div.top div.content div.left b {
+  color: #fff;
+  font-size: 30px;
+}
+body div.container div.top div.content div.left > p {
+  color: #CE281E;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+}
+body div.container div.top div.content div.left div.no-air {
+  float: left;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #B7D54F;
+}
+body div.container div.top div.content div.left div.no-air p {
+  color: #B7D54F;
+}
+body div.container div.top div.content div.left div.no-air p i {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #B7D54F;
+  border-radius: 50%;
+  background: #B7D54F;
+  margin-right: 3px;
+}
+body div.container div.top div.content div.left div.air {
+  float: left;
+  font-size: 12px;
+}
+body div.container div.top div.content div.left div.air p {
+  color: #B7D54F;
+}
+body div.container div.top div.content div.left h5 b {
+  font-size: 16px;
+  color: #B7D54F;
+}
+body div.container div.top div.content div.right {
+  display: flex;
+  flex: 4;
+  position: relative;
+}
+body div.container div.top div.content div.right ul {
+  width: 300px;
+  height: 140px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  border-top: 2px solid #CE281E;
+  margin: 10px 5px;
+}
+body div.container div.top div.content div.right ul li {
+  flex: 1;
+  color: #4E6656;
+  font-size: 20px;
+  width: 30px;
+  height: 110px;
+  text-align: center;
+}
+body div.container div.top div.content div.right ul li span {
+  display: flex;
+}
+body div.container div.top div.content div.right ul li.current-stop span {
+  color: #CE281E;
+}
+body div.container div.top div.content div.right b {
+  position: absolute;
+  right: 5px;
+  border: 5px solid transparent;
+  border-right-color: #CE281E;
+}
+body div.container div.top div.content div.right i {
+  position: absolute;
+  right: 5px;
+  top: -1px;
+  border: 5px solid transparent;
+  border-right-color: #B7D54F;
+}
+body div.container div.middle {
+  position: absolute;
+  bottom: 40px;
+  right: 74px;
+  width: 20px;
+  height: 250px;
+  background: #ccc;
+}
+body div.container div.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90px;
+  border: 40px solid transparent;
+  border-bottom-color: #F7F3F4;
+}

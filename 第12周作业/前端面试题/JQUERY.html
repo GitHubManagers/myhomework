@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery操作</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/mweb.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">1、body中的onload()函数和jQuery()中的$(document).ready()有什么区别？</h3>
+    </div>
+    <div class="panel-body">
+      <p>onload()和$(document).ready()的区别如下：</p>
+      <ul>
+        <li>可以在页面中使用多个$(document).ready()，但只能使用一次onload();</li>
+        <li>$(document).ready()函数在DOM元素加载完成以后就会被调用，而onload()函数这要在所有的关联资源(包括图像、音频)加载完毕才会调用；</li>
+        <li>$(document).ready()有简写的方式，onload()无简写方式。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">2、jQuery中有哪几种类型的选择器？</h3>
+    </div>
+    <div class="panel-body">
+      <p>有3中类型的选择器，如下：</p>
+      <ul>
+        <li>基本选择器：直接根据id、css类名，元素名返回dom元素；</li>
+        <li>层次选择器：也叫做路径选择器，可以根据路径层次选择相应的dom元素；</li>
+        <li>过滤选择器：在前面的基础上过滤相关条件，得到匹配的dom元素。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">3、jQuery的美元符号$有什么作用？</h3>
+    </div>
+    <div class="panel-body">
+      <p>美元符号$是jQuery的别名，它是jQuery选择器，查查如下代码：</p>
+
+      <p>
+        $(document).ready(function(){...});
+      </p>
+
+      <p>也可以用jQuery来替代</p>
+
+      <p>
+        jQuery(document).ready(function(){...});
+      </p>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading ">
+      <h3 class="panel-title">4、jQuery中的Delegate()函数有什么作用？</h3>
+    </div>
+    <div class="panel-body">
+      <p>delegate()会在一下两个情况下使用到：</p>
+      <ul>
+        <li>当需要给父元素其下的子元素添加事件时，代码如下：</li>
+        <li>
+          <h5>HTML代码</h5>
+          $("ul").delegate("li","click",function(){ <br/>
+          $(this).hide(); <br/>
+          });
+        </li>
+        <li>当元素在当前页面中不可用时，可以使用delegate();</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

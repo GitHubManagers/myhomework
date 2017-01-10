@@ -1,0 +1,563 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font:14px/100% arial, "Hiragino Sans GB", "Hiragino Sans GB W3", \5b8b\4f53;
+  background-color:#f7f7f8;
+}
+
+dl, dt, dd, ul, ol, li{
+  list-style:none;
+}
+
+.fl{
+  float:left;
+}
+
+.fr{
+  float:right;
+}
+
+a, a:hover{
+  font-size:14px;
+  color:#000;
+  text-decoration:none;
+}
+
+.wrapper{
+  width:1190px;
+  margin:0 auto;
+}
+/*导航部分*/
+header{
+  border-bottom:1px solid #dddddd;
+}
+
+nav{
+  overflow:hidden;
+  height:60px;
+  line-height:60px;
+}
+
+/*hao123 的LOGO*/
+a.logo h3{
+  width:168px;
+  height:60px;
+  background:url("../images/richanglogo168_24.png") no-repeat;
+  text-indent:-9999px;
+}
+
+/*hao123 的LOGO 右侧*/
+a.setting span{
+  float:left;
+  width:35px;
+  line-height:20px;
+  margin:13px 22px 0 10px;
+  padding-left:5px;
+  background:#34a637;
+  color:#fff;
+  text-align:justify;
+}
+
+div.nav_left > div{
+  margin-right:15px;
+}
+
+div.nav_left > div span{
+  color:#999999;
+}
+
+div.tianqi{
+  width:150px;
+  position:relative;
+}
+
+div.tianqi span[class="fr"]{
+  margin-right:5px;
+}
+
+div.tianqi b{
+  position:absolute;
+  width:10px;
+  height:6px;
+  background:url("../images/index_widthlg.png") no-repeat -52px -97px;
+  left:30px;
+  top:25px;
+}
+
+div.tianqi i{
+  position:absolute;
+  width:16px;
+  height:16px;
+  background:url("../images/index_menus_widthlg.png") no-repeat -20px -263px;
+  top:20px;
+}
+
+div.tianqi p{
+  display:inline-block;
+  position:absolute;
+  width:11px;
+  height:11px;
+  background:url("../images/index_widthlg.png") no-repeat -342px -251px;
+  right:-10px;
+  top:25px;
+}
+
+/*导航 的 右侧*/
+div.nav_right ul li{
+  float: left;
+  position: relative;
+}
+
+div.nav_right ul li i{
+  position:absolute;
+  width:14px;
+  height:15px;
+  background:url("../images/index_widthlg.png") no-repeat -42px -133px;
+  color:#999999;
+  top:23px;
+  left:-20px;
+}
+
+div.nav_right ul li a:hover{
+  text-decoration:underline;
+  color:#099E6A;
+}
+
+div.nav_right ul li a{
+  display:inline-block;
+  width:45px;
+  height:60px;
+  text-align:center;
+  color:#999999;
+}
+
+/*百度LOGO和搜索框*/
+div.top_main a h3{
+  width:150px;
+  height:44px;
+  background:url("../images/index_widthlg.png") no-repeat -9px -213px;
+  text-indent:-9999px;
+}
+
+div.top_main{
+  overflow:hidden;
+  width:975px;
+  height:70px;
+  padding:27px 0 0 215px;
+}
+/*搜索框 的盒子*/
+div.search_box{
+  float:left;
+  width:626px;
+  line-height:36px;
+  position:relative;
+  overflow:hidden;
+  border:1px solid;
+}
+
+div.search_box > span{
+  margin-left:5px;
+}
+/*搜索框*/
+div.search_box b{
+  position:absolute;
+  width:10px;
+  height:6px;
+  background:url("../images/index_widthlg.png") no-repeat -52px -97px;
+  top:15px;
+}
+/*输入框*/
+input.keyword{
+  float:left;
+  width:448px;
+  height:34px;
+  line-height:34px;
+  border:none;
+}
+/*提交按钮*/
+button.search{
+  float:left;
+  width:120px;
+  height:36px;
+  font-size:16px;
+  font-weight:bold;
+  border:none;
+  border-left:1px solid;
+  line-height:36px;
+  background-image:linear-gradient(to bottom, #FEFEFE 0%, #EEEEEE 50%, #E7E7E7 100%);
+}
+
+button.search:hover{
+  background-image:linear-gradient(to bottom, #F3F3F3 0%, #EFEFEF 50%, #E6E6E6 100%);
+}
+
+/*背景颜色*/
+div.bg_color{
+  float:left;
+  margin-left:10px;
+  width:150px;
+  height:36px;
+  border:1px solid #FF3300;
+}
+div.bg_color ul li{
+  float:left;
+  width:49px;
+  height:36px;
+  border-right:1px solid;
+  cursor:pointer;
+}
+div.bg_color ul li.first_color{
+  background:#f00;
+}
+div.bg_color ul li.middle_color{
+  background:#0f0;
+}
+div.bg_color ul li.last_color{
+  background:#00f;
+  width:50px;
+  border-right:none;
+}
+/*热词搜索*/
+div.hot_words{
+  width: 628px;
+  margin: 10px auto;
+  float: left
+}
+
+div.hot_words a{
+  color:#666666;
+  margin-right:10px;
+}
+
+div.hot_words a:hover{
+  text-decoration:underline;
+  color:#FF3300;
+}
+
+/*页面主导航*/
+nav.main_nav{
+  height:38px;
+  line-height:42px;
+  margin-top:20px;
+  border-top:2px solid #099E6A;
+  border-bottom:1px solid #ADE0C1;
+  /*background: #e8efe8;*/
+}
+
+nav.main_nav ul li{
+  float:left;
+  width:110px;
+  height:42px;
+  text-align:center;
+  position:relative;
+}
+
+nav.main_nav ul li.current{
+  width:81px;
+}
+
+nav.main_nav ul li.current a{
+  background:#0AA770;
+  color:#fff;
+}
+
+nav.main_nav ul li a{
+  display:inline-block;
+  width:100%;
+  color:#333333;
+  line-height:42px;
+  /*background: #e8efe8;*/
+}
+
+nav.main_nav ul li a:hover{
+  background:#0AA770;
+  color:#fff;
+}
+
+.main_nav ul li b{
+  position:absolute;
+  height:25px;
+  top:7px;
+  border-left:1px solid #ddd;
+}
+
+/*主体内容*/
+/*主体左侧部分*/
+div.layout_box{
+  margin-top:10px;
+  /*overflow:hidden;*/
+}
+
+div.layout_side{
+  width:278px;
+  border:1px solid #ddd;
+}
+
+div.layout_side ul{
+  margin:9px 0 0 18px;
+}
+
+div.layout_side ul li{
+  float:left;
+  position:relative;
+  width:110px;
+  height:26px;
+  line-height:26px;
+  margin-bottom:10px;
+  padding-left:20px;
+}
+
+div.layout_side ul li > i{
+  position:absolute;
+  height:15px;
+  top:5px;
+  margin-left:-2px;
+  border-left:1px solid #000;
+}
+
+div.layout_side ul li > b{
+  position:absolute;
+  width:16px;
+  height:17px;
+  left:5px;
+  top:5px;
+  background:url("../images/index_menus_widthlg.png") no-repeat;
+}
+
+div.layout_side ul li.tv b{
+  background-position:-20px -83px;
+}
+
+div.layout_side ul li.game b{
+  background-position:-20px -302px;
+}
+
+div.layout_side ul li.move b{
+  background-position:-20px -163px;
+}
+
+div.layout_side ul li.comic b{
+  background-position:-20px -384px;
+}
+
+div.layout_side ul li.news b{
+  background-position:-20px -103px;
+}
+
+div.layout_side ul li.music b{
+  background-position:-20px -263px;
+}
+
+div.layout_side ul li.caipiao b{
+  background-position:-20px -25px;
+}
+
+div.layout_side ul li.gaoxiao b{
+  background-position:-20px -122px;
+}
+
+div.layout_side ul li.phone b{
+  background-position:-20px -283px;
+}
+
+div.layout_side ul li.money b{
+  background-position:-20px -362px;
+}
+
+div.layout_side ul li a{
+  color:#000;
+  margin:0 5px;
+}
+
+div.layout_side ul li a:hover{
+  color:#FF3300;
+  text-decoration:underline;
+}
+
+/*主体右侧部分*/
+div.lay_content{
+  width:898px;
+  border:1px solid #ddd;
+}
+
+div.lay_content ul{
+  overflow:hidden;
+  padding:9px 0 0 23px;
+}
+
+div.lay_content ul li{
+  float:left;
+  width:139px;
+  height:30px;
+  line-height:30px;
+}
+div.lay_content ul li a:hover{
+  color:#FF3300;
+  text-decoration:underline;
+}
+
+/*给每个链接添加 对应的logo  start*/
+div.lay_content ul li.icon{
+  padding-left:24px;
+  width:115px;
+  position:relative;
+}
+
+div.lay_content ul li.icon b{
+  position:absolute;
+  width:22px;
+  height:25px;
+  background:url("../images/defaultIcon1229.png") no-repeat;
+  left:0;
+  top:6px;
+}
+
+div.lay_content ul li.baidu b{
+  background-position:0 -200px;
+}
+
+div.lay_content ul li.sina b{
+  background-position:0 -121px;
+}
+
+div.lay_content ul li.shouhu b{
+  background-position:0 -320px;
+}
+
+div.lay_content ul li.tent b{
+  background-position:0 -40px;
+}
+
+div.lay_content ul li.wangyi b{
+  background-position:0 -160px;
+}
+
+div.lay_content ul li.youku b{
+  background-position:0 -400px;
+}
+
+div.lay_content ul li.tianmao b{
+  background:url("../images/tianmao2015082101.gif") no-repeat;
+  top:0;
+  left:-5px;
+}
+
+div.lay_content ul li.fenghuang b{
+  background-position:0 -240px;
+}
+
+div.lay_content ul li.taobao b{
+  background-position:0 -360px;
+}
+
+div.lay_content ul li.tao12 b{
+  background:url("../images/tao12.gif") no-repeat;
+  top:0;
+  left:-5px;
+}
+
+div.lay_content ul li.move123 b{
+  background-position:0 -640px;
+}
+div.lay_content ul li.jinretejia b{
+  background-position:0 -480px;
+}
+
+div.lay_content ul li.qiche b{
+  background-position:0 -520px;
+}
+
+div.lay_content ul li.m_icon{
+  padding-left:24px;
+  width:115px;
+  position:relative;
+}
+
+div.lay_content ul li.m_icon b{
+  position:absolute;
+  width:22px;
+  height:17px;
+  background:url("../images/m_haolist.png") no-repeat;
+  left:0;
+  top:8px;
+}
+
+div.lay_content ul li.jingdong b{
+  background-position:0 -48px;
+}
+div.lay_content ul li.suning b{
+  background-position:0 -86px;
+}
+div.lay_content ul li.guomei b{
+  background-position:0 -105px;
+}
+div.lay_content ul li.juhuasuan b{
+  background-position:0 -29px;
+}
+div.lay_content ul li.tongcheng b{
+  background-position:0 -67px;
+}
+div.lay_content ul li.fangtianxia b{
+  background-position:0 -163px;
+}
+div.lay_content ul li.xiecheng b{
+  background-position:0 -240px;
+}
+div.lay_content ul li.weipinhui b{
+  background-position:0 -221px;
+}
+div.lay_content ul li.tuniu b{
+  background-position:0 -202px;
+}
+div.lay_content ul li.suningPhone b{
+  background-position:0 -86px;
+}
+div.lay_content ul li.oneShop b{
+  background-position:0 -278px;
+}
+div.lay_content ul li.aitaobao b{
+  background-position:0 -144px;
+}
+/*给每个链接添加 对应的logo  end*/
+/*给右侧的链接的一些特殊 处理 start*/
+/*红框*/
+div.lay_content ul li.taobao span,div.lay_content ul li.tao12 span,div.lay_content ul li.zhibo span{
+  position: absolute;
+  width: 35px;
+  height: 29px;
+  background: url(../images/bubble.png) no-repeat -1px 0;
+  padding-left: 7px;
+  font-size: 12px;
+  word-wrap: break-word;
+  padding-top: 2px;
+  line-height: 13px;
+  color: #ff3c00;
+  cursor: pointer;
+}
+/*字体*/
+div.lay_content ul li.jinxiu{
+  position:relative;
+}
+div.lay_content ul li.guomei i,div.lay_content ul li.jinxiu i{
+  position: absolute;
+  width: 31px;
+  line-height: 13px;
+  font-style:normal;
+  padding-left: 7px;
+  font-size: 12px;
+  font-weight:bold;
+  word-wrap: break-word;
+  color: #ff3c00;
+  cursor: pointer;
+  top:5px;
+}
+div.lay_content ul li.jinxiu i{
+  top:10px;
+}
+div.lay_content ul li.text_col a{
+  color:#099E6A;
+}
+/*给右侧的链接的一些特殊 处理 end*/

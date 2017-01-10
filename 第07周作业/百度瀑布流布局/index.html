@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>百度图片瀑布流</title>
+  <link rel="stylesheet" href="css/baiDu.css"/>
+</head>
+<body>
+<!--顶部右侧导航-->
+<div id="header" class="header_box">
+  <div class="wrapper header">
+    <ul class="top">
+      <li><a href="#">百度首页</a></li>
+      <li><a href="#">userName</a></li>
+      <li><a href="#">我的图片</a></li>
+      <li><a href="#">传统翻页版本</a></li>
+    </ul>
+    <!--搜索框上的文字导航-->
+    <nav id="nav" class="clear">
+      <ul class="nav">
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">网页</a></li>
+        <li><a href="#">贴吧</a></li>
+        <li><a href="#">知道</a></li>
+        <li><a href="#">音乐</a></li>
+        <li class="current"><a href="#">图片</a></li>
+        <li><a href="#">视频</a></li>
+        <li><a href="#">地图</a></li>
+        <li><a href="#">百科</a></li>
+        <li><a href="#">文库</a></li>
+      </ul>
+      <!--LOGO与搜索框-->
+      <div id="search" class="clear search">
+        <img src="images/logo.png" alt="百度"/>
+
+        <div id="form_box" class="form_box">
+          <form action="https://www.baidu.com/s?" method="get" target="_blank">
+            <input class="keyword" type="text" name="wd" placeholder="&nbsp;&nbsp;请输入您的内容"/>
+            <b></b>
+            <button class="search" type="submit" value="百度一下">百度一下</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!--瀑布流 begin-->
+<div id="container" class="wrapper" style="position:relative">
+  <div class="box">
+    <div class="content">
+      <img src="images/1.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/2.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/3.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/4.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/5.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/6.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/7.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/8.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/9.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/10.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/11.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+  <div class="box">
+    <div class="content">
+      <img src="images/12.jpg" alt="动漫图片"/>
+    </div>
+  </div>
+</div>
+
+<!--瀑布流 end-->
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/m_Baidu.js"></script>
+</body>
+</html>

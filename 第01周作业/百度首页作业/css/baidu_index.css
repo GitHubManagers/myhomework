@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/*公共设置*/
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0
+}
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    clear:both;
+}
+ul,ol,dd,li{
+    list-style:none;
+}
+a{
+    color:#555555;
+}
+.gao{
+    height: 20px;
+}
+
+/*版本V01*/
+nav{
+    height:32px;
+    border-bottom:1px solid #EBEBEB;
+}
+
+/*版本V02*/
+#nav_c{
+    height:32px;
+    line-height:32px;
+    overflow:hidden;
+}
+/*nav的左侧*/
+#nav_left{
+    margin-left:15px;
+}
+#nav_left .left_none{
+    text-decoration:none;
+}
+#nav_left ul li{
+    float:left;
+    width:42px;
+    text-align:center;
+    position:relative;
+}
+#nav_left ul li a{
+    display:block;
+    width:42px;
+    height:32px;
+    font-size:14px;
+}
+#nav_c #nav_left ul li:nth-child(2){
+    padding-left:18px;
+}
+#nav_c #nav_left ul li:nth-child(2) i{
+    position:absolute;
+    left:0;
+    top:5px;
+    width:18px;
+    height:18px;
+    background:url("../imgs/sunshine.png") no-repeat;
+}
+#nav_c #nav_left ul li:nth-child(3) a{
+    color:#BADC00;
+    font-weight:bold;
+}
+#nav_left ul li:nth-child(4) a{
+    border-right:1px solid #dddddd;
+}
+
+/*nva右侧*/
+#nav_right ul{
+    overflow:hidden;
+}
+#nav_right ul li {
+    float:left;
+    width:50px;
+    height:32px;
+    padding:0 5px;
+    line-height:32px;
+    text-align:center;
+}
+#nav_right ul>li>a{
+    display:block;
+    width:60px;
+    height:32px;
+    line-height:32px;
+}
+#nav_right ul li.last{
+    width:66px;
+    background:#398BFB;
+}
+#nav_right ul li.last a{
+    color:#ffffff;
+    font-size:14px;
+    padding-left:4px;
+    text-decoration:none;
+}
+
+#nav_right ul li.last a{
+    width:70px;
+    background:#398BFB;
+}
+#nav_right ul li a.right_bold{
+    color:#555555;
+    font-weight:bold;
+}
+
+/*搜索栏部分*/
+header{
+    width:894px;
+    margin:0 auto;
+    margin-bottom:70px;
+}
+header>div{
+    width:600px;
+    margin:0 auto;
+    text-align:center;
+}
+header>div img{
+    width:270px;
+    height:170px;
+}
+.search{
+    width:600px;
+    height:40px;
+    overflow:hidden;
+    background:#3388FF;
+    position:relative;
+}
+.search input{
+    float:left;
+    border-style:none;
+    border:1px solid #E9E9E9;
+    width:500px;
+    height:38px;
+}
+a.search_name{
+    float:right;
+    width:98px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#ffffff;
+    text-decoration:none;
+}
+.search b{
+    position:absolute;
+    width:18px;
+    height:16px;
+    right:110px;
+    top:10px;
+    background:url("../imgs/camera_list.png") no-repeat 0 0;
+}
+.search b:hover{
+    background:url("../imgs/camera_list.png") no-repeat 0 -20px;
+}
+/*内容部分*/
+section{
+    position: relative;
+    height: 420px; 
+    border:1px solid #EBEBEB;
+}
+section #content_box{
+    position: absolute;
+    width:892px;
+    left: 50%;
+    margin-left: -446px;
+    border:1px solid #EBEBEB; 
+}
+#notice{
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #EBEBEB;
+}
+#notice span{
+    width:124px;
+    height: 39px;
+    background: #9A9DA2;
+    position: relative;
+}
+#notice span>a{
+    display: block;
+    width:110px;
+    height: 39px;
+    text-align: center;
+    color:#FFFFF0;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #9A9DA2;
+    margin-left: 14px;
+}
+#notice span>i{
+    position: absolute;
+    top:11px;
+    left: 14px;
+    width:14px;
+    height: 14px;
+    background: url("../imgs/icon_list1.png") no-repeat -147px 0px;
+}
+#notice b{
+    position: absolute;
+    top:11px;
+    right: 14px;
+    width:15px;
+    height: 18px;
+    background: url("../imgs/icon_list1.png") no-repeat -123px -50px;
+}
+#notice b:hover{
+    background: url("../imgs/icon_list1.png") no-repeat -123px -74px;
+}
+/*底部*/
+footer{
+    width:894px;
+    margin:0 auto;
+}
+#foot{
+    width:600px;
+    margin:0 auto;
+}
+#foot div.foot_c{
+    width:500px;
+    height: 40px;
+    line-height: 40px;
+    text-align:center;
+}
+#foot div.foot_c h4{
+    width:500px;
+    height: 40px;
+}
+#foot div.foot_c h4>a,#foot div.foot_c h4>span,#foot div.foot_c>span>a{
+    font-size: 14px;
+    font-weight: normal;
+    color:#999999;
+}
+
+

@@ -1,0 +1,204 @@
+@charset "UTF-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+  margin:0;
+  padding:0
+}
+input,button{
+  border:none;
+}
+ul,ol,li{
+  list-style:none;
+}
+body{
+  font:12px arial;
+  behavior:url("../ie-css3.htc");
+}
+#wrapper{
+  position:relative;
+  height:auto;
+  min-height:100%;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  clear:both;
+}
+
+/*导航栏 start*/
+header{
+  border-bottom:1px solid #ccc;
+  overflow:hidden;
+  height:42px;
+}
+nav{
+  /*width:500px;*/
+  height:32px;
+  line-height:32px;
+  padding-top:10px;
+  float:right;
+  text-align:center;
+}
+nav a{
+  display:inline-block;
+  font-weight:bold;
+  margin-left:20px;
+  margin-left:20px\9;
+  color:#333333;
+}
+nav a:hover{
+  text-decoration:none;
+  color:#e4393c;
+}
+nav a.nor{
+  font-weight:normal;
+}
+nav a.current{
+  width:80px;
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#3388FF;
+  border-bottom: 1px solid #38f;
+}
+nav a.current{
+  cursor:default;
+}
+/*导航栏 end*/
+
+/*content start*/
+article{
+  text-align:center;
+  _text-align:center;
+}
+#content{
+  padding-bottom:350px;
+}
+#content img{
+  width:270px;
+  height:179px;
+}
+#content_form{
+  width:700px;
+  margin:0 auto;
+  position:relative;
+}
+#content_form input.keyword{
+  float:left;
+  width:582px;
+  height:34px;
+  line-height:34px;
+  padding-right:18px;
+  _padding-right:18px;
+  border:1px solid #3385FF;
+}
+
+#content_form form b{
+  display:inline-block;
+  width:18px;
+  height:20px;
+  position:absolute;
+  z-index:100;
+  top:10px;
+  right: 115px;
+  background:url("../images/camera_list.png") no-repeat 0 0;
+}
+#content_form form b:hover{
+  background:url("../images/camera_list.png") no-repeat 0 -20px;
+}
+#content_form button.search{
+  float:left;
+  width:98px;
+  height:36px;
+  line-height:36px;
+  background-color:#3385FF;
+  font-size:15px;
+  color:#fff;
+}
+#content_form button.search:hover{
+  background-image:linear-gradient(to bottom,#17407C 0%, #2560B7 50% ,#3681F1 100%);
+  cursor:pointer;
+  behavior:url("../ie-css3.htc");
+}
+/*content end*/
+
+/*footer start*/
+footer{
+  text-align:center;
+  overflow:hidden;
+  position:relative;
+  bottom:20px;
+  width:100%;
+}
+#footer_box{
+  overflow:hidden;
+  width:700px;
+  margin:0 auto;
+}
+#footer_left{
+  width:330px;
+  height:100px;
+}
+#footer_left div.phone,#footer_left div.food{
+  width:150px;
+}
+#footer_left div img{
+  margin-top:5px;
+  float:left;
+}
+#footer_left div.phone div,#footer_left div.food div{
+  width:70px;
+  margin:5px 0 0 10px;
+  _margin-left:10px;
+}
+#footer_right{
+  width:330px;
+  height:100px;
+  margin-left:40px;
+  +width:350px;
+  + margin-left:20px;
+}
+div.message p,div.other p{
+  line-height:24px;
+}
+div.message p a,div.message p span{
+  color:#999;
+}
+div.message p.first>a{
+  margin-right:26px;
+}
+div.message p.last>a{
+  margin-left:20px;
+}
+div.message p.middle,div.message p.last{
+  position:relative;
+}
+div.message p.last{
+  _padding-left:100px;
+}
+div.message p.middle{
+  padding-right:14px;
+}
+div.message p.middle i,div.message p.last b{
+  position:absolute;
+  width:14px;
+  height:18px;
+}
+div.message p.middle i{
+  top:4px;
+  right:0;
+  +top:0;
+  +right:8px;
+  background: url("../images/icons_list.png") no-repeat -600px -96px;
+}
+div.message p.last b{
+  top:4px;
+  left:70px;
+  +top:0;
+  +left:80px;
+  background: url("../images/icons_list.png") no-repeat -623px -96px;
+}
+/*footer end*/
+

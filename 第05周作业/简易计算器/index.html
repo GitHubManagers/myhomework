@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易版的计算器</title>
+</head>
+<body>
+
+
+<script>
+    var num1 = parseFloat(prompt('请输入数字1'));
+    var num2 = parseFloat(prompt('请输入数字2'));
+    var symbols = prompt('请输入你要操作的字符+、-、*、/');
+
+    alert(score(num1,num2,symbols));
+
+
+    function score(num1, num2, symbols) {
+        if (symbols == '+') {
+            return num1 + num2;
+        } else if (symbols == '-') {
+            return num1 - num2;
+        } else if (symbols == '*') {
+            return num1 * num2;
+        } else if (symbols == '/') {
+            return num1 / num2;
+        } else {
+            console.log('请重新输入');
+        }
+    }
+</script>
+</body>
+</html>

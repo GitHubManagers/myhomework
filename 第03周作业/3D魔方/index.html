@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8"/>
+  <title>3D魔方</title>
+  <link rel="stylesheet" href="css/rubik.css"/>
+</head>
+<body>
+<!--
+  我的总结：
+  1、给完成容器添加   transform-style: preserve-3d;
+                    -webkit-transform-style: preserve-3d;
+  2、父容器与子容器必须实现position地位（relative、absolute、fixed），除（static）
+  3、属性:perspective-origin:50% 50%;起作用的提前————必须设置width和height
+  4、属性-webkit-perspective: 30px;透视、视口。对于没有设置rotateX以及rotateY的元素，translateZ的功能就是让元素在自己的眼前或近或远
+  5、而rotateX/rotateY/rotateZ可以帮助理解三维坐标，则translateZ则可以帮我们理解透视位置
+-->
+
+  <div id="box">
+    <div class="div1">
+      <ul>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+      </ul>
+    </div>
+    <div class="div2">
+      <ul>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+      </ul>
+    </div>
+    <div class="div3">
+      <ul>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+      </ul>
+    </div>
+    <div class="div4">
+      <ul>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+      </ul>
+    </div>
+    <div class="div5">
+      <ul>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+      </ul>
+    </div>
+    <div class="div6">
+      <ul>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+        <li class="min_cube"></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

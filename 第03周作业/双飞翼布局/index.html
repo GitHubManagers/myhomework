@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>双飞翼布局</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+<body>
+
+	<!-- 
+		我的实现思路：
+		
+		1、三个div都统一脱离标准流（float:left）
+		2、atricle部分的内容middle，套一个外层的容器content，设置width：100%；而内容middle则通过padding设置两边的值
+		3、给atricle的left、right设置margin-left的值调整，达到双飞翼效果
+
+
+		我的问题：
+		
+		案例中：分别给middle、left、right设置了	margin-bottom: -9999px;   padding-bottom: 9999px; 父容器设置了overfloat:hidden;
+		这样不管是改变 middle 或 left 或 right【任意一项】的内容，其它两边的高度都会随之改变，这样不会有很大的局限性吗？
+
+		比如要实现，当改变middle中的内容，而左右两边的div高度【不会】随着middle的内容的增加而发生改变的话，这样的双飞翼布局还能实现吗？
+		我通过给left、right去掉	margin-bottom: -9999px;   padding-bottom: 9999px; 属性，增加了固定的高度（比如50px;）,这样当middle的内容增加时，middle的背景颜色出现了在左右两端，怎么解决这个问题？
+
+	 -->
+	<div class="header">
+			nav部分
+	</div>		
+	<div class="atricle">
+		<div id="content">
+			<div id="middle">
+				<p>content middle</p>
+				<p>content middle</p>
+				<p>content middle</p>
+				<p>content middle</p>
+				<p>content middle</p>
+			</div>
+		</div>
+		<div id="left">
+			content left
+		</div>
+		<div id="right">
+			content right
+		</div>
+	</div>
+	<div class="footer">
+			footer部分
+	</div>
+</body>
+</html>

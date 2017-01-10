@@ -1,0 +1,951 @@
+/*初始化公共的属性*/
+body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    /*-moz-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    font-family: Verdana, "Microsoft Yahei", sans-serif;
+}
+
+ul, ol, dd, dt, dl, li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cl {
+    clear: both;
+}
+
+a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*大体的布局*/
+body {
+    font-size: 12px;
+    background: #f5f5f5;
+    color: #000;
+}
+
+header {
+    background: #fff;
+}
+
+article {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #fff;
+    border-top: 1px solid #dddddd;
+}
+
+/*nav导航顶部 start*/
+nav {
+    width: 1000px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+/*导航左侧 开始*/
+nav a > img {
+    width: 110px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+nav ul li {
+    float: left;
+    position:relative;
+}
+
+nav ul li a>b {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    right: 8px;
+    width: 8px;
+    height: 6px;
+    background: url("../images/iconlist_2.png") no-repeat -95px -55px;
+}
+
+nav ul li:hover a>b {
+    background-position: -95px -45px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    animation: rotate 1s ease normal;
+    -moz-animation: rotate 1s ease normal;
+    -webkit-animation: rotate 1s ease normal;
+}
+
+nav ul li a {
+    display: block;
+    width: 82px;
+    height: 60px;
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+    padding-right: 8px;
+}
+
+nav ul li a:hover {
+    color: #35b55b;
+}
+
+nav ul li a.current {
+    margin-left: 60px;
+    color: #35b55b;
+}
+
+nav ul li>div:nth-child(2) {
+    display: none;
+    width:200px;
+    line-height: 30px;
+    background: #fff;
+    position: absolute;
+    left: -50px;
+}
+nav ul li:nth-child(2):hover div{
+    display: block;
+}
+nav ul li:nth-child(3):hover div{
+    display: block;
+}
+nav ul li:nth-child(4):hover div{
+    display: block;
+}
+
+nav ul li>div:nth-child(2) h4{
+    font-weight: normal;
+    margin-left: 10px;
+    color: #9C9C9C;
+    background: #FAFAFA;
+}
+
+nav ul li>div:nth-child(2) a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+nav ul li>div:nth-child(2) a i{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    left: -22px;
+    top:2px;
+    background: url("../images/allicon1.png") no-repeat 0 0;
+}
+nav ul li>div>a span{
+    margin-left: 10px;
+}
+nav ul li>div:nth-child(2) a i.web{
+    background: url("../images/allicon1.png") no-repeat -30px -55px;
+}
+nav ul li>div:nth-child(2) a i.python{
+    background: url("../images/allicon3.png") no-repeat -3px -3px;
+}
+nav ul li>div:nth-child(2) a i.go{
+    background: url("../images/allicon3.png") no-repeat -3px -66px;
+}
+nav ul li>div:nth-child(2) a i.ios{
+    background: url("../images/allicon3.png") no-repeat -3px -139px;
+}
+
+nav ul li div.vipkecheng{
+    width: 350px;
+    position: absolute;
+    overflow: hidden;
+}
+nav ul li div.vipkecheng a{
+    display: block;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+}
+nav ul li div.vipkecheng a p{
+    display: inline-block;
+    margin-left: 30px;
+}
+nav ul li div.vipkecheng a span{
+    float: right;
+}
+
+/*导航左侧 结束*/
+/*导航右侧 开始*/
+.info {
+    width: 120px;
+    height: 60px;
+}
+
+.info span {
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-top: 21px;
+}
+
+.info span.search {
+    background: url("../images/search-icon.png") no-repeat;
+    background-size: 18px;
+}
+
+.info span.search:hover {
+    background: url("../images/search-icon2.png") no-repeat;
+    background-size: 18px;
+}
+
+.info span.app {
+    background: url("../images/app-icon.png") no-repeat;
+    background-size: 18px;
+    margin: 21px 30px;
+    position: relative;
+}
+
+.info span.app > div {
+    display: none;
+    width: 150px;
+    position: absolute;
+    top: 28px;
+    left: -64px;
+}
+
+.info span.app > div img {
+    width: 100%;
+}
+
+.info span.app:hover{
+    background: url("../images/app-icon2.png") no-repeat;
+    background-size: 18px;
+}
+
+.info span.app:hover > div {
+    display: block;
+}
+
+.info span.user {
+    background: url("../images/login-icon.png") no-repeat;
+    background-size: 18px;
+}
+
+/*导航右侧 结束*/
+/*nav导航顶部 end*/
+
+/*article内容 start*/
+section {
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+/*part1 大banner轮播图 左侧部分*/
+#part1 div.banner > a {
+    display: block;
+    height: 330px;
+}
+
+/*part1 大banner轮播图 右侧登录信息部分*/
+#login {
+    width: 238px;
+    height: 158px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 2px #ccc;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+#login div.login_top {
+    width: 180px;
+    height: 57px;
+    margin: 30px auto 0;
+}
+
+#login div.login_top a {
+    display: block;
+    width: 57px;
+    height: 57px;
+    float: left;
+    margin-right: 15px;
+}
+
+#login div.login_top a > img {
+    width: 57px;
+    height: 57px;
+}
+
+.login_top {
+    overflow: hidden;
+    margin: 30px;
+}
+
+.login_top span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.login_top p {
+    margin-top: 5px;
+}
+
+#login > a {
+    display: block;
+    float: left;
+    width: 83px;
+    height: 30px;
+    border: 1px solid #35b55b;
+    color: #35b55b;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login > a.first {
+    margin: 20px 15px 20px 30px;
+}
+
+#login > a:hover {
+    color: #fff;
+    background: #35b55b;
+}
+
+/*part2 不同学科 部分*/
+#part2 ul.jiuyeban > li {
+    float: left;
+    width: 198px;
+    height: 128px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+
+#part2 ul.jiuyeban > li i {
+    display: block;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/jiuyenan.png") no-repeat;
+    background-size: 52px;
+}
+
+#part2 ul.jiuyeban > li img {
+    width: 200px;
+    height: 94px;
+}
+
+#part2 ul.jiuyeban > li a {
+    display: block;
+    width: 198px;
+    height: 128px;
+    background: #fff;
+}
+
+#part2 ul.jiuyeban > li h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#part2 ul.jiuyeban > li a:hover {
+    box-shadow: 0 0 10px red;
+}
+
+#part2 ul.jiuyeban > li h3:hover {
+    color: #35b55b;
+}
+
+#part2 ul.jiuyeban > li.first {
+    border-left: 1px solid #ccc;
+}
+
+#part2 ul.jiuyeban > li.last {
+    border-left: none;
+}
+
+/*part3 视频课程 部分*/
+#part3 ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+#part3 ul li.last {
+    margin: 0;
+}
+
+#part3 ul li > a img {
+    width: 233px;
+    height: 155px;
+}
+
+#part3 ul li > a {
+    display: block;
+    width: 233px;
+    height: 268px;
+    border: 1px solid #ccc;
+    background: #fff;
+    text-decoration: none;
+}
+
+#part3 ul li > a:hover {
+    box-shadow: 0 0 5px #ccc;
+}
+
+#part3 ul li > a div {
+    padding: 14px;
+    width: 205px;
+    height: 85px;
+    text-align: left;
+}
+
+#part3 ul li > a div h3 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #555;
+    line-height: 18px;
+    height: 36px;
+}
+
+#part3 ul li > a div p {
+    color: #999;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+}
+
+#part3 ul li > a div span {
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+}
+
+#part3 ul li > a div span b {
+    font-style: normal;
+    font-size: 18px;
+    color: #ff5c00;
+}
+
+#part3 ul li > a div span i {
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+#part3 ul li > a div span.last {
+    float: right;
+    margin-top: 4px;
+}
+
+/*part4 职业学院 部分*/
+#part4 h3, #part5 h3, #part6 h3, #part7 h3 {
+    margin: 40px 0 22px 0;
+    font-size: 18px;
+    font-weight: normal;
+    height: 18px;
+    line-height: 18px;
+    color: #555;
+}
+
+#part4 > div.first, #part4 > div.last {
+    position: relative;
+    text-align: center;
+}
+
+#part4 > div.first a {
+    display: block;
+    height: 270px;
+}
+
+#part4 > div.first img {
+    display: inline-block;
+    width: 500px;
+    height: 270px;
+}
+
+#part4 > div.first span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 180px;
+    width: 100%;
+    background: url(../images/001_1.png) no-repeat center 70px;
+    background-size: 55px 84px;
+}
+
+#part4 > div.last ul li > a > img {
+    display: inline-block;
+    width: 240px;
+    height: 130px;
+}
+
+#part4 > div.last ul {
+    width: 500px;
+    overflow: hidden;
+}
+
+#part4 > div.last ul li {
+    float: left;
+    width: 240px;
+    margin: 0 0 10px 10px;
+}
+
+#part4 > div.last ul li > a {
+    display: block;
+    height: 130px;
+    position: relative;
+}
+
+#part4 > div.last ul li > a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding-top: 90px;
+    width: 100%;
+    font-size: 14px;
+}
+
+#part4 > div.last ul li > a span.one {
+    background: url(../images/002_2.png) no-repeat center 30px;
+    background-size: 36px;
+}
+
+#part4 > div.last ul li > a span.two {
+    background: url(../images/003_3.png) no-repeat center 30px;
+    background-size: 36px;
+}
+
+#part4 > div.last ul li > a span.three {
+    background: url(../images/003_3.png) no-repeat center 30px;
+    background-size: 36px;
+}
+
+#part4 > div.last ul li > a span.four {
+    background: url(../images/004_4.png) no-repeat center 30px;
+    background-size: 36px;
+}
+
+div.first > a > i, div.last > ul > li i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    z-index: 100;
+}
+
+div.first > a > i:hover, div.last > ul > li i:hover {
+    opacity: 0.5;
+}
+
+/*part5 会员课程 部分*/
+#part5 ul li {
+    float: left;
+    width: 156px;
+    height: 150px;
+    border: 1px solid #ddd;
+    background: #fff;
+
+}
+
+#part5 ul li:hover {
+    box-shadow: 0 0 5px #ccc;
+}
+
+#part5 ul li {
+    margin: 0 10px 10px 0;
+}
+
+#part5 ul li.middle, #part5 ul li.last {
+    margin-right: 0;
+}
+
+#part5 ul li a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#part5 ul li a img {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+}
+
+#part5 ul li a p {
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#part5 ul li a span {
+    font-size: 12px;
+    color: #35b55b;
+}
+
+#part5 > a, #part7 > a {
+    display: block;
+    width: 118px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #35b55b;
+    color: #35b55b;
+    margin: 20px auto 10px;
+    border-radius: 5px;
+}
+
+#part5 > a:hover {
+    background: #35b55b;
+    color: #fff;
+}
+
+/*part6  学员故事 部分*/
+#part6 > ul li {
+    float: left;
+    width: 318px;
+    height: 200px;
+}
+
+#part6 > ul li.middle {
+    margin: 0 23px;
+}
+
+#part6 > ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#part6 > ul li a > div.detail {
+    width: 316px;
+    background: #fff;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+#part6 > ul li a > div.detail:hover {
+    box-shadow: 0 0 5px #ddd;
+}
+
+#part6 > ul li a > div.detail i {
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background: url("../images/storyicon_top.png") no-repeat;
+    background-size: 14px 10px;
+}
+
+#part6 > ul li a > div.detail b {
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("../images/storyicon.png") no-repeat;
+    background-size: 14px 10px;
+    transform: rotate(180deg);
+}
+
+#part6 > ul li a > div.detail u {
+    display: inline-block;
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    bottom: -18px;
+    left: 19px;
+    background: url("../images/iconlist_1.png") no-repeat -260px -46px;
+    transform: rotate(270deg);
+}
+
+#part6 > ul li a > div.detail p {
+    padding: 15px;
+    text-align: left;
+    font-size: 12px;
+    color: #555;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+#part6 > ul li a > div.info {
+    width: 318px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+#part6 > ul li a > div.info img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 20px 0 10px;
+}
+
+#part6 > ul li a > div.info p {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #555;
+
+}
+
+#part6 > ul li a > div.info span {
+    display: block;
+    height: 24px;
+    width: 100%;
+    line-height: 24px;
+    font-size: 14px;
+    color: #999;
+    margin-top: 0px;
+}
+
+/*part7 合作企业  部分*/
+#part7 ul li {
+    float: left;
+    width: 146px;
+    height: 48px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 10px 10px 0;
+}
+
+#part7 ul li:hover {
+    box-shadow: 0 0 5px #ddd;
+}
+
+#part7 ul li a {
+    display: inline-block;
+    width: 146px;
+    height: 48px;
+}
+
+#part7 ul li:nth-child(1) > a {
+    background: url("../images/f01.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(2) > a {
+    background: url("../images/f02.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(3) > a {
+    background: url("../images/f03.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(4) > a {
+    background: url("../images/f04.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(5) > a {
+    background: url("../images/f05.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(6) {
+    margin-right: 0;
+}
+
+#part7 ul li:nth-child(6) > a {
+    background: url("../images/f06.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(7) > a {
+    background: url("../images/f07.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(8) > a {
+    background: url("../images/f08.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(9) > a {
+    background: url("../images/f09.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(10) > a {
+    background: url("../images/f10.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(11) > a {
+    background: url("../images/f11.png") no-repeat center;
+}
+
+#part7 ul li:nth-child(12) {
+    margin-right: 0;
+}
+
+#part7 ul li:nth-child(12) > a {
+    background: url("../images/f12.png") no-repeat center;
+}
+
+/*article 内容部分 end*/
+/*footer start*/
+#content_box {
+    width: 1000px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+#inner_c {
+    overflow: hidden;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+
+/*footer 底部上面的左侧 部分*/
+#inner_c div {
+    float: left;
+    margin-right: 30px;
+}
+
+#inner_c div img {
+    display: inline-block;
+    width: 109px;
+    height: 40px;
+}
+
+#inner_c div p {
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+}
+
+/*footer 底部上面的中间 部分*/
+#inner_c > dl {
+    float: left;
+}
+
+#inner_c dl dt {
+    width: 135px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#inner_c dl dd > a {
+    display: block;
+    width: 135px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+}
+
+/*footer 底部上面的右侧 部分*/
+#inner_c div.service {
+    width: 175px;
+    height: 119px;
+    float: right;
+}
+
+#inner_c div.service p {
+    font-size: 14px;
+    color: #808080;
+    margin-bottom: 10px;
+}
+
+#inner_c div.service i {
+    display: block;
+    font-style: normal;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    background: url("../images/icon-down-ios.png") no-repeat;
+    background-size: 30px;
+}
+
+#inner_c div.service b {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    padding-left: 40px;
+    border: 1px solid #ddd;
+    background: url("../images/icon-down-and.png") no-repeat;
+    background-size: 30px;
+}
+
+/*footer 底部下面 部分*/
+div#copy {
+    text-align: center;
+    overflow: hidden;
+}
+
+#copy span, #copy a {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+}
+
+#copy a:hover {
+    color: #35b55b;
+}
+
+#copy a.first {
+    float: right;
+    width: 20px;
+    height: 15px;
+    background: url("../images/icon-down-wechat.png") no-repeat;
+    background-size: 20px 15px;
+}
+
+#copy a.second {
+    float: right;
+    width: 20px;
+    height: 15px;
+    background: url("../images/icon-down-sina.png") no-repeat;
+    background-size: 20px 15px;
+    margin-right: 5px;
+}
+
+#copy a.three {
+    display: block;
+    width: 60px;
+    height: 22px;
+    background: url("../images/cert.png") no-repeat;
+    background-size: 60px 22px;
+    margin: 10px auto;
+}
+
+/*footer end*/
+
+
+
+
+
+

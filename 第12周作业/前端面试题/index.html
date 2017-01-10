@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>面试题总结</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/mweb.css"/>
+</head>
+<body>
+<div class="container">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#basehtml" role="tab" data-toggle="tab">HTML5基础</a></li>
+    <li role="presentation"><a href="#basecss" role="tab" data-toggle="tab">CSS3相关</a></li>
+    <li role="presentation"><a href="#corehtml" role="tab" data-toggle="tab">HTML5高级</a></li>
+    <li role="presentation"><a href="#aboutJS" role="tab" data-toggle="tab">JavaScript相关</a></li>
+    <li role="presentation"><a href="#aboutDOM" role="tab" data-toggle="tab">DOM相关</a></li>
+    <li role="presentation"><a href="#aboutjQuery" role="tab" data-toggle="tab">jQuery</a></li>
+    <li role="presentation"><a href="#aboutAjax" role="tab" data-toggle="tab">Ajax</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <a href="index.html">点击对应选项，查看试题...</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="basehtml">
+      <a href="BaseHTML5.html" target="_blank">BaseHTML5</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="basecss">
+      <a href="BaseCSS3.html" target="_blank">BaseCSS3</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="corehtml">
+      <a href="CoreHTML5.html" target="_blank">CoreHTML5</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="aboutJS">
+      <a href="JavaScript.html" target="_blank">JavaScript</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="aboutDOM">
+      <a href="DOM.html" target="_blank">DOM</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="aboutjQuery">
+      <a href="JQUERY.html" target="_blank">JQUERY</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="aboutAjax">
+      <a href="AJAX.html" target="_blank">AJAX</a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+  $('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show')
+  })
+</script>
+</body>
+</html>
